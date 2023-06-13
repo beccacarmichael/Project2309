@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/about.css">
+      <script src="JS/script.js" defer></script>
+      <title>LYB Consulting</title> <!-- ####CHANGE-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+  <body>
+      <!-- Navbar set up -->
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <!-- Add a drop down to our nav bar for the project section  -->
+            <div class="dropdown">
+                <button class="dropbtn">Project
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Project.html">Final Solution</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
+                    <a href="Project.html#paragraph2">Methodology</a>
+                    <a href="Project.html#paragraph3">Don't need? </a>
+                </div>
+            </div>
+            <a href="about.html" class="active">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!-- Button to scroll back to top of page -->
+    <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button>
+    <!-- Hero Image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            LYB Consulting
+        </div>
+    </div>
+    <section id="about-header">
+      <h2 class="page-header">Meet The Team</h2>
+      <p> The LYB Consulting Group consists of three pivotal members who are dedicated to 
+        providing high-quality web-based GIS solutions for the client. Each team member of
+         LYB Consulting brings their unique experience to the table in order to deliver the best product as outlined below
+      </p>
+    </section>
+    <!-- Team Member Bios -->
+    <!-- Image overlay of each team member  - Image overlay adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp -->
+    <div id="about-container" class="flex-container">
+      <div class="flex-child Amanda"> 
+        <img src="Images/AboutUs/amanda.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            Lucija Bralic<br><br> Lucija’s background in coding makes her the perfect fit for the role of Lead Programmer. 
+            She has always been interested in playing with code and finding solutions to complex problems. During her time 
+            spent at Fleming College, she has gained valuable skills in automation using Python, and has applied these skills 
+            in several major projects. She also has experience using Arcade to customize Dashboards in ArcGIS Online, in 
+            addition to using JavaScript libraries such as Leaflet to create open-source web solutions. In addition, with a 
+            BSc in Biology and Environmental Sciences, she has a very good understanding of the ecological applications for this 
+            project. She is confident that she can use these skills and experiences to support the team in creating a successful 
+            product for the client. 
+          </div>
+        </div>
+      </div>
+      <div class="flex-child Steph"> 
+        <img src="Images/AboutUs/Steph.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            Yingjia Ye<br><br>Yingjia obtained decent grades in Database courses during her time spent in the GIS program at 
+            Fleming College. She has gained experience in using both Microsoft Access and PostgreSQL in various class projects.
+            Additionally, she is familiar with extracting, transforming, and loading data using FME. She has also gained experience 
+            in Python scripting and data visualization in other classes. She is confident in her ability to apply the skills she learned 
+            from class and make valuable contributions to support the team.
+          </div>
+        </div>
+      </div>
+      <div class="flex-child Becca"> 
+        <img src="Images/AboutUs/Becca.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            Becca Carmichael <br><br>Becca’s background in Environmental Geography and Ecosystem Management gives her an understanding 
+            of the importance of wetland conservation and communicating it with the public. Her professional experience also gives her 
+            the communication skills to help organize the team and liaise with external members of the project in order to ensure the 
+            project is on track and the deliverables align with the client's vision. Throughout the GIS Application Specialist Program Becca 
+            has developed an understanding in data management, database creation and scripting which she will be able to apply toward the 
+            completion of this project. She has also further developed her skills in design and visual communication which she will use to 
+            ensure the final deliverables feature aesthetic and accessible designs and cartographic outputs.<br>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- Footer -->
+    <footer>
+      <p>LYB Consulting - Project: 2309</p>
+    </footer>
+  </body>
+</html>

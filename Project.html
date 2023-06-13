@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <!-- <link rel="stylesheet" href="CSS/project.css"> -->
+        <script src="JS/script.js" defer></script>
+        <title>LYB Consulting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+        <!-- Navbar set up - adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <header class="header">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Home</a>
+                <!-- Add a drop down to  navbar for the project section - Adapted from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+                <div class="dropdown active" >
+                    <button class="dropbtn">Project
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Project.html">Story Map</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
+                        <a href="Project.html#paragraph2">Biomonitoring Dashboard </a>
+                        <a href="Project.html#paragraph3">Water Temperature Dashboard </a>
+                        <a href="Project.html#paragraph4">PWQMN Dashboard</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavMenu()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <!-- Button to scroll back to top of page - BC-->
+        <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button>
+        <!-- Hero Image - BC -->
+        <div class="hero-image">
+            <div class="hero-text">
+                Immersive Insights Into Nature: Environmental Monitoring Dashboards for Kawartha Conservation
+            </div>
+        </div>
+        <main id="project-page">
+            <h2 class="page-header">Some kind of intro to the final product</h2>
+            <section id="paragraph1" class="big-headings">
+            <p class="Project-page methodology"> Talk about the story map and insert pics / link </p>
+
+            <!-- Biomonitoring Dashboard  -->
+            </section>
+            <section id="paragraph2" class="big-headings">
+                <h2 class="page-header">Story Map</h2>
+                <p class="project-page methodology"> Talk about the Bio dashboard and insert pics / link
+                </p>
+                <!-- Water Temp Dashboard-->
+                <div class="phase1">
+                    <h2>Biomonitoring Dashboard</h2> 
+                    <div class="thin-divider"></div>
+                    <div> 
+                        <p class="project-page methodology" > Talk about dashboard and insert line/ pics </p>
+                    </div>
+    
+                    <div class="slider">
+                        <div class="img-box">
+                        <img src="Images/S1_1.jpg" class="slider-img" alt="Open data portal from the government of Ontario">
+                        </div>
+                        <div class="slider-buttons">
+                            <button class="btn" onclick="prev()">Prev</button>
+                            <button class="btn" onclick="next()">Next</button>
+                        </div>
+                    </div>
+                    
+                
+
+                    <!--  -->            
+                    <div class="thin-divider"></div>
+                    <h3> Water Temperature Dashboard</h3>
+                    <p class="project-page">stuffffff
+                    </p>  
+                       
+                    <!-- SLIDER FOR STATIC IMAGES   -->
+                    <div class="slider2">
+                        <div class="img-box">
+                            <img src="Images/static_elements.jpg" class="static-img" alt = "static parts of dashboard">
+                        </div>
+                    
+                        <div class="slider-buttons">
+                            <button class="btn1" onclick="prev1()">Prev</button>
+                            <button class="btn1" onclick="next1()">Next</button>
+                        </div>
+                    </div>
+                        
+
+                    <!-- SLIDER FOR STATIC IMAGES -->
+
+                    <div class="slider2" >
+                        <div class="img-box">
+                            <img src="Images/dynamic_elements.jpg" class="dynamic-img" alt = "dynamic elements of dashboard">
+                        </div>
+
+                        <div class="slider-buttons">
+                            <button class="btn" onclick="prev2()">Prev</button>
+                            <button class="btn" onclick="next2()">Next</button>
+                        </div>
+                    </div>
+                    <div class="thin-divider"></div>
+                            
+                    <!-- PWQMN Dashboard-->
+                    <h3> PWQMN Dashboard</h3>   
+                    <p class="project-page"> Dashboard and images and link here  
+                    </p>
+                    
+                    <!-- slide 4 corresponding to the "the design of the db" paragraph ks -->
+                    <div class="slider2" >
+                        <div class="img-box">
+                            <img src="Images/Limit_1.jpg" class="limit-img" alt = "dashboard-limits">
+                        </div>
+
+                        <div class="slider-buttons">
+                            <button class="btn" onclick="prev4()">Prev</button>
+                            <button class="btn" onclick="next4()">Next</button>
+                        </div>
+                    </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p class="project-page">LYB Consulting - Project: 2309</p>
+        </footer>  
+    </body>
+</html>
