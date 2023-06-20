@@ -149,15 +149,18 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #e3e4e4;
+    color: white;
     text-shadow: 2px 2px #384e60;
     font-size: 50pt;
     font-family: Tahoma, sans-serif;
 }
 
-@media all and (max-width: 775px) {
+@media all and (max-width: 800px) {
     .hero-text {
-        font-size: 25pt;
+        font-size: 20pt;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 }
 
@@ -476,6 +479,16 @@ li {
 #paragraph3 {
     background-color: #e3e4e3;
     padding-bottom: 30px;
+}
+
+/* iFrame settings for embedded dashboards */
+iframe {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: max(500px, 70vh);
+    width: 100%;
+    margin: auto;
 }
 
 /* Methodology */
