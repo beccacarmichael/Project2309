@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <!-- <link rel="stylesheet" href="CSS/project.css"> -->
+        <script src="JS/script.js" defer></script>
+        <title>LYB Consulting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+        <!-- Navbar set up - adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <header class="header">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Home</a>
+                <!-- Add a drop down to  navbar for the project section - Adapted from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+                <div class="dropdown active" >
+                    <button class="dropbtn">Project
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Project.html">Story Map</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
+                        <a href="Project.html#paragraph2">Biomonitoring Dashboard </a>
+                        <a href="Project.html#paragraph3">Water Temperature Dashboard </a>
+                        <a href="Project.html#paragraph4">PWQMN Dashboard</a>
+                    </div>
+                </div>
+                <a href="Methodology.html">Methodology</a>
+                <a href="about.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavMenu()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <!-- Button to scroll back to top of page - BC-->
+        <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button>
+        <!-- Hero Image - BC -->
+        <div class="hero-image">
+            <div class="hero-text">
+                Immersive Insights Into Nature: Environmental Monitoring Dashboards for Kawartha Conservation
+            </div>
+        </div>
+        <main id="project-page">
+            <h2 class="page-header">Methodology</h2>
+            <section id="paragraph1" class="big-headings">
+            <p class="Project-page methodology"></p>
+
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p class="project-page">LYB Consulting - Project: 2309</p>
+        </footer>  
+    </body>
+</html>
