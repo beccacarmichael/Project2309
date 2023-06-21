@@ -599,6 +599,7 @@ p.project-page {
     height: auto;
     max-height: 525px;
     max-width: 350px;
+	border-radius: 50%
 }
 
 .overlay {
