@@ -637,3 +637,15 @@ p.project-page {
     width: 100%;
 }  
   
+
+/* METHODOLOGY PAGE */
+.image-center {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+}
+
+.figure-text {
+    font-size: 15px;
+}
