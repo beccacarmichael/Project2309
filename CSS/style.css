@@ -284,10 +284,10 @@ we change the image to just be simple a block element displayed above the text *
     padding-left: 35px;
 }
 
-#goals {
-    padding-right: 35px;
-    padding-left: 35px;
-    padding-bottom: 30px;
+#map-image {
+    position: relative;
+    width: 60%;
+    left: calc(50% - 60% / 2);  /* "A% - B% / 2" - make sure B is the same as the width */
 }
 
 #deliverables-button {
@@ -305,37 +305,6 @@ we change the image to just be simple a block element displayed above the text *
 }
 
 /* PROJECT PAGE */ 
-
-/* StoryMap and Project Page */
-.story1 {
-    max-width: 40%;
-    float: right;
-    margin-right: 20px;
-    margin-top: 100px;
-}
-
-/*Solution Final Dashboard and StoryMap */ 
-.final-dashboard {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.final-storymap {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-/* div phase separator */
-/*.div-separate {
-    background-color: #E8F5F1;
-    padding: 5px;
-}*/
 
 /*div styling projects page for clarity */
 .dashboards {
@@ -355,62 +324,10 @@ we change the image to just be simple a block element displayed above the text *
     }
 }
 
-/* table for problem statement */
-table {
-    overflow-x:auto  
-}
-.t-heading {
-    padding: 50px;
-    font-weight: bold;
-    font-size: 25px;
-    color: #384E60;
-}
-.t-heading-responsive {
-    display: none;
-    padding: 50px;
-    font-weight: bold;
-    font-size: 25px;
-    color: #384E60;
-}
-.t-heading-responsive td {
-    text-align: center;
-}
-@media screen and (max-width: 600px) {
-    .t-heading {
-        display: none;
-    }
-    .t-heading-responsive {
-        display: block;
-    }
-    .t-exp {
-        text-align: center;
-    }
-}
-
-.t-exp {
-    color:#384E60;
-    font-weight: bold;
-}
 
 /*Project Page - Main Settings */ 
-.pDash {
-    max-width: 40%;
-    float: right; 
-    margin-top: 50px;
-    margin-right: 10px;
-    background-color: #e3e4e4;
-    padding-right: 30px;
-}
 /* on thin screens, stack block elements on top of each other instead of floating*/
 @media screen and (max-width: 900px) {
-    .pDash {
-        float: none;
-        max-width: 95%;
-        margin-left: 10px;
-    }
-    div.slider {
-        width: 95%;
-    }
     button.btn {
         margin-left: 100px;
         margin-right: 100px;
@@ -447,15 +364,6 @@ iframe {
 }
 
 /* Methodology */
-/*.staticE {
-    margin-left:100px;
-    max-width:40%
-}
-
-.static1 {
-    max-width:20%;
-    padding:40px;
-}*/
 
 /* Project page margins */
 #project-page {
