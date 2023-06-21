@@ -19,13 +19,13 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="Project.html">Story Map</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
-                    <a href="Project.html#paragraph2">Biomonitoring Dashboard </a>
-                    <a href="Project.html#paragraph3">Water Temperature Dashboard </a>
-                    <a href="Project.html#paragraph4">PWQMN Dashboard</a>
+                    <a href="Project.html#story-map">Story Map</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
+                    <a href="Project.html#biomonitoring-dashboard">Biomonitoring Dashboard </a>
+                    <a href="Project.html#water-temp-dashboard">Water Temperature Dashboard </a>
+                    <a href="Project.html#water-quality-dashboard">PWQMN Dashboard</a>
                 </div>
             </div>
-            <a href="Methodology.html">Methodology</a>
+            <a href="methodology.html">Methodology</a>
             <a href="about.html">About Us</a>
             <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavMenu()">
                 <i class="fa fa-bars"></i>
@@ -57,57 +57,55 @@
             </p>
             <!-- StoryMap-->
             <div class="thin-divider"></div>
-            <h2 class="page-header">StoryMap</h2>
-            <section class="big-headings">
-                <p class="Project-page methodology">The StoryMap provides the user with an understanding of the programs 
-                    and their importance to watershed management. Embedded within the StoryMap are three interactive 
-                    Dashboards which feature data Kawartha Conservation has collected related to these programs.  
-                    The Dashboards present this data along with background information and visual aids to help the 
-                    public understand and interpret the data. 
-                </p>
-                <p class="project-page methodology" > Check out the <a href="https://storymaps.arcgis.com/stories/00d7cb8fca194404b07f74e3c3c8e0e6" target="_blank">StoryMap</a> below! </p>
-                <iframe src="https://storymaps.arcgis.com/stories/00d7cb8fca194404b07f74e3c3c8e0e6" frameborder="0" allowfullscreen allow="geolocation"></iframe>
-                
-                
+            <h2 id="story-map" class="page-header">StoryMap</h2>
+            <p class="Project-page methodology">The StoryMap provides the user with an understanding of the programs 
+                and their importance to watershed management. Embedded within the StoryMap are three interactive 
+                Dashboards which feature data Kawartha Conservation has collected related to these programs.  
+                The Dashboards present this data along with background information and visual aids to help the 
+                public understand and interpret the data. 
+            </p>
+            <p class="project-page methodology" > Check out the <a href="https://storymaps.arcgis.com/stories/00d7cb8fca194404b07f74e3c3c8e0e6" target="_blank">StoryMap</a> below! </p>
+            <iframe src="https://storymaps.arcgis.com/stories/00d7cb8fca194404b07f74e3c3c8e0e6" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+            
+            
+            <div class="dashboards">
                 <!-- Bio Dashboard-->
                 <div class="thin-divider"></div>
-                <div class="phase1">
-                    <h2>Biomonitoring Dashboard</h2> 
-                    <p class="project-page methodology" >The Biomonitoring Dashboard was created to show the trends of 
-                        Family Biotic Index and Sensitive Organisms for site locations throughout the watershed. The 
-                        Dashboard features two scatter plots showing the trends of each monitoring site over the years. 
-                        The graphs are shaded showing different thresholds of the data collected. The Dashboard can be 
-                        filtered by Site Type or Habitat Type so the user can see specific trends throughout the watershed. 
-                        Alternatively, the user can choose to view the data for a specific year or site.
-                    </p>
-                    <p class="project-page methodology" > Check out the <a href="https://www.arcgis.com/apps/dashboards/2dab12ad68254e68b86c553a4e3fc4cb" target="_blank">Biomonitoring Dashboard </a> below! </p>
-                    <iframe frameborder="0" src="https://www.arcgis.com/apps/dashboards/2dab12ad68254e68b86c553a4e3fc4cb"></iframe>
-                    
-                    <!--WaterTemp Dashboard -->            
-                    <div class="thin-divider"></div>
-                    <h3> Water Temperature Dashboard</h3>
-                    <p class="project-page methodology">The Water Temperature Dashboard was created to show data collected 
-                        monthly at sample sites across the Kawartha Watershed and the percent of each month where the 
-                        recorded water temperature was less than the favorable water temperature for Brook Trout habitat 
-                        (22°C). The user can populate the data collected at individual sites throughout the watershed by 
-                        using the selector within the Dashboard. Upon site selection the data is presented to the user 
-                        both in graph and tabular format, allowing them to interact with the data in a variety of ways.    
-                    </p>
-                    <p class="project-page methodology" > Check out the <a href="https://www.arcgis.com/apps/dashboards/9d65f1349c364e65bf39c47c09ff74be" target="_blank">Temperature Monitoring Dashboard </a>below! </p>
-                    <iframe frameborder="0" src="https://www.arcgis.com/apps/dashboards/9d65f1349c364e65bf39c47c09ff74be"></iframe>
-                    
-                    <!-- PWQMN Dashboard-->
-                    <div class="thin-divider"></div>
-                    <h3> Water Quality Dashboard</h3>   
-                    <p class="project-page methodology">The Water Quality Dashboard was created to show trends in the 
-                        Provincial Water Quality Monitoring Network data. Following the prompt, the user selects a category, 
-                        year and individual site location which populates average concentration charts as well as a pass/fail 
-                        chart for all sites for that category threshold in the selected year.  
-                    </p>
-                    <p class="project-page methodology" > Check out the <a href="https://fleming.maps.arcgis.com/apps/dashboards/46ecd1854b9e424ba2d7585d3901957e" target="_blank">Water Quality Dashboard </a> below! </p>
-                    <iframe frameborder="0" src="https://fleming.maps.arcgis.com/apps/dashboards/46ecd1854b9e424ba2d7585d3901957e"></iframe>
-                </div>
-            </section>
+                <h3 id="biomonitoring-dashboard">Biomonitoring Dashboard</h3> 
+                <p class="project-page methodology" >The Biomonitoring Dashboard was created to show the trends of 
+                    Family Biotic Index and Sensitive Organisms for site locations throughout the watershed. The 
+                    Dashboard features two scatter plots showing the trends of each monitoring site over the years. 
+                    The graphs are shaded showing different thresholds of the data collected. The Dashboard can be 
+                    filtered by Site Type or Habitat Type so the user can see specific trends throughout the watershed. 
+                    Alternatively, the user can choose to view the data for a specific year or site.
+                </p>
+                <p class="project-page methodology" > Check out the <a href="https://www.arcgis.com/apps/dashboards/2dab12ad68254e68b86c553a4e3fc4cb" target="_blank">Biomonitoring Dashboard </a> below! </p>
+                <iframe frameborder="0" src="https://www.arcgis.com/apps/dashboards/2dab12ad68254e68b86c553a4e3fc4cb"></iframe>
+                
+                <!--WaterTemp Dashboard -->            
+                <div class="thin-divider"></div>
+                <h3 id="water-temp-dashboard"> Water Temperature Dashboard</h3>
+                <p class="project-page methodology">The Water Temperature Dashboard was created to show data collected 
+                    monthly at sample sites across the Kawartha Watershed and the percent of each month where the 
+                    recorded water temperature was less than the favorable water temperature for Brook Trout habitat 
+                    (22°C). The user can populate the data collected at individual sites throughout the watershed by 
+                    using the selector within the Dashboard. Upon site selection the data is presented to the user 
+                    both in graph and tabular format, allowing them to interact with the data in a variety of ways.    
+                </p>
+                <p class="project-page methodology" > Check out the <a href="https://www.arcgis.com/apps/dashboards/9d65f1349c364e65bf39c47c09ff74be" target="_blank">Temperature Monitoring Dashboard </a>below! </p>
+                <iframe frameborder="0" src="https://www.arcgis.com/apps/dashboards/9d65f1349c364e65bf39c47c09ff74be"></iframe>
+                
+                <!-- PWQMN Dashboard-->
+                <div class="thin-divider"></div>
+                <h3 id="water-quality-dashboard"> Water Quality Dashboard</h3>   
+                <p class="project-page methodology">The Water Quality Dashboard was created to show trends in the 
+                    Provincial Water Quality Monitoring Network data. Following the prompt, the user selects a category, 
+                    year and individual site location which populates average concentration charts as well as a pass/fail 
+                    chart for all sites for that category threshold in the selected year.  
+                </p>
+                <p class="project-page methodology" > Check out the <a href="https://fleming.maps.arcgis.com/apps/dashboards/46ecd1854b9e424ba2d7585d3901957e" target="_blank">Water Quality Dashboard </a> below! </p>
+                <iframe frameborder="0" src="https://fleming.maps.arcgis.com/apps/dashboards/46ecd1854b9e424ba2d7585d3901957e"></iframe>
+            </div>
         </section>
     </main>
     <!-- Footer -->

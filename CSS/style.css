@@ -306,6 +306,20 @@ we change the image to just be simple a block element displayed above the text *
     padding-bottom: 30px;
 }
 
+#deliverables-button {
+    background-color: #384e60;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #d8d9da;
+    text-align: center;
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    margin: auto;
+    font-weight: bold;
+}
+
 /* PROJECT PAGE */ 
 
 /* StoryMap and Project Page */
@@ -340,7 +354,7 @@ we change the image to just be simple a block element displayed above the text *
 }*/
 
 /*div styling projects page for clarity */
-.phase1 {
+.dashboards {
     background-color: #E3E4E4;
     padding: 0px 0px 30px 0px;
 }
@@ -548,11 +562,15 @@ p.project-page {
 /* ABOUT US PAGE */
 
 /* About us image overlay */ 
-.flex-container {
+#about-container {
     position: relative;
     width: 95%;
     margin: auto;
     display: flex;
+}
+
+.about-person {
+    flex: 1;
 }
 
 .image {
@@ -575,9 +593,10 @@ p.project-page {
     /* needs same max size as the image */
     max-height: 525px;
     max-width: 350px;
+    font-size: larger;
 }
 
-.person-bio-img-with-text:hover .overlay {
+.img-with-overlay:hover .overlay {
     opacity: 1;
 }
 
@@ -607,11 +626,11 @@ p.project-page {
     max-width: 350px;
 }
 
-.person-bio-img-with-text {
-    position: relative;
-    flex: 1;
-    width: 100%;
-}  
+.name-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
 
 
 /* METHODOLOGY PAGE */
@@ -625,10 +644,3 @@ p.project-page {
 .figure-text {
     font-size: 15px;
 }
-
-.name-text {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
