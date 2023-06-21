@@ -29,6 +29,10 @@ p {
     text-align: center;
 }
 
+a {
+    color: black
+}
+
 /* Navbar - */ 
 /* this is the colour settings for the whole navbar  */ 
 .topnav {
