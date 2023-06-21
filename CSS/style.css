@@ -235,25 +235,25 @@ h4 {
 /* HOME PAGE */
 
 /* home page Parallax  - adapted from https://www.w3schools.com/howto/howto_css_parallax.asp */ 
-.parallax {
+/*.parallax {
     background-image: url("../Images/HeroImages/splash.jpg");
     min-height: 700px; 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /*background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */ 
 
-.parallax2 {
+/*.parallax2 {
     background-image: url("../Images/HeroImages/Aqua.jpg");
     min-height: 500px; 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /*background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 /*.intro {
     text-align: center;
