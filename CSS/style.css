@@ -74,7 +74,7 @@ a {
         float: right;
         display: block;
     }
-
+    
     /* topnav styles if the topnav has the "responsive" class - set when the user clicks on the hamburger menu*/
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -394,7 +394,7 @@ table {
     font-weight: bold;
 }
 
- /*Project Page - Main Settings */ 
+/*Project Page - Main Settings */ 
 .pDash {
     max-width: 40%;
     float: right; 
@@ -455,8 +455,8 @@ iframe {
 }
 
 .static1 {
-   max-width:20%;
-   padding:40px;
+    max-width:20%;
+    padding:40px;
 }*/
 
 /* Project page margins */
@@ -495,7 +495,7 @@ iframe {
     display: flex;
     justify-content: space-evenly;
 }
-  
+
 .btn1 {
     border: none;
     outline: none;
@@ -506,15 +506,15 @@ iframe {
     cursor: pointer;
     margin: 20px auto;
 }
-  
+
 .btn:hover {
     background: #556471;
 }
-  
+
 .btn1:hover {
     background: #556471;
 }
-  
+
 .big-headings {
     background-color: #e3e4e4;
     /* Padding (there are a few options, saved here in case we change our minds later) */
@@ -561,7 +561,7 @@ p.project-page {
     height: auto;
     max-height: 525px;
     max-width: 350px;
-	border-radius: 50%
+    border-radius: 50%
 }
 
 .overlay {
@@ -607,12 +607,12 @@ p.project-page {
     max-width: 350px;
 }
 
-  .person-bio-img-with-text {
+.person-bio-img-with-text {
     position: relative;
     flex: 1;
     width: 100%;
 }  
-  
+
 
 /* METHODOLOGY PAGE */
 .image-center {
