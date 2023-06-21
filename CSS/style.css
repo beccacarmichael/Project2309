@@ -663,3 +663,8 @@ p.project-page {
 .figure-text {
     font-size: 15px;
 }
+
+.nametext {margin-left: 60px;
+  width: 50%;
+  padding: 10px;}
+
