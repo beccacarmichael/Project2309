@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="CSS/style.css">
-        <!-- <link rel="stylesheet" href="CSS/project.css"> -->
-        <script src="JS/script.js" defer></script>
-        <title>LYB Consulting</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    </head>
-    <body>
-        <!-- Navbar set up - adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-        <header class="header">
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" >Home</a>
-                <!-- Add a drop down to  navbar for the project section - Adapted from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-                <div class="dropdown active" >
-                    <button class="dropbtn">Deliverables
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="Project.html">Story Map</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
-                        <a href="Project.html#paragraph2">Biomonitoring Dashboard </a>
-                        <a href="Project.html#paragraph3">Water Temperature Dashboard </a>
-                        <a href="Project.html#paragraph4">PWQMN Dashboard</a>
-                    </div>
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="CSS/project.css"> -->
+    <script src="JS/script.js" defer></script>
+    <title>LYB Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <!-- Navbar set up - adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <!-- Add a drop down to  navbar for the project section - Adapted from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+            <div class="dropdown active" >
+                <button class="dropbtn">Deliverables
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Project.html">Story Map</a> <!--currently set to link to the section on 1 page can change to diff pages if needed -->
+                    <a href="Project.html#paragraph2">Biomonitoring Dashboard </a>
+                    <a href="Project.html#paragraph3">Water Temperature Dashboard </a>
+                    <a href="Project.html#paragraph4">PWQMN Dashboard</a>
                 </div>
-                <a href="Methodology.html">Methodology</a>
-                <a href="about.html">About Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavMenu()">
+            </div>
+            <a href="Methodology.html">Methodology</a>
+            <a href="about.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavMenu()">
                 <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </header>
-        <!-- Button to scroll back to top of page - BC-->
-        <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button>
-        <!-- Hero Image - BC -->
-        <div class="hero-image">
-            <div class="hero-text">
-                Immersive Insights Into Nature: Environmental Monitoring Dashboards for Kawartha Conservation
-            </div>
+            </a>
         </div>
-         <!-- Project Deliverables-->
-        <main id="project-page">
-            <h2 class="page-header">Project Deliverables</h2>
-            <section id="paragraph1" class="big-headings">
-                <p class="Project-page methodology">The final deliverable for this project consists of a StoryMap 
-                    to be utilized by Kawartha Conservation on their public facing website allowing meaningful and 
-                    impactful public interaction and engagement with the data collected by three Environmental 
-                    Programs; Biomonitoring, Water Temperature Monitoring and Water Quality. 
-                </p>
-                <p class="Project-page methodology">The StoryMap provides the user with an understanding of the 
-                    programs and their importance to watershed management. Embedded within the StoryMap are three 
-                    interactive Dashboards which feature data Kawartha Conservation has collected related to 
-                    these programs.  The Dashboards present this data along with background information and visual 
-                    aids to help the public understand and interpret the data.  
-                </p>
+    </header>
+    <!-- Button to scroll back to top of page - BC-->
+    <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button>
+    <!-- Hero Image - BC -->
+    <div class="hero-image">
+        <div class="hero-text">
+            Immersive Insights Into Nature: Environmental Monitoring Dashboards for Kawartha Conservation
+        </div>
+    </div>
+    <!-- Project Deliverables-->
+    <main id="project-page">
+        <h2 class="page-header">Project Deliverables</h2>
+        <section id="paragraph1" class="big-headings">
+            <p class="Project-page methodology">The final deliverable for this project consists of a StoryMap 
+                to be utilized by Kawartha Conservation on their public facing website allowing meaningful and 
+                impactful public interaction and engagement with the data collected by three Environmental 
+                Programs; Biomonitoring, Water Temperature Monitoring and Water Quality. 
+            </p>
+            <p class="Project-page methodology">The StoryMap provides the user with an understanding of the 
+                programs and their importance to watershed management. Embedded within the StoryMap are three 
+                interactive Dashboards which feature data Kawartha Conservation has collected related to 
+                these programs.  The Dashboards present this data along with background information and visual 
+                aids to help the public understand and interpret the data.  
+            </p>
             <!-- StoryMap-->
             <div class="thin-divider"></div>
             <h2 class="page-header">StoryMap</h2>
@@ -67,8 +67,8 @@
                 </p>
                 <p class="project-page methodology" > Check out the <a href="https://storymaps.arcgis.com/stories/00d7cb8fca194404b07f74e3c3c8e0e6" target="_blank">StoryMap</a> below! </p>
                 <iframe src="https://storymaps.arcgis.com/stories/00d7cb8fca194404b07f74e3c3c8e0e6" frameborder="0" allowfullscreen allow="geolocation"></iframe>
-
-
+                
+                
                 <!-- Bio Dashboard-->
                 <div class="thin-divider"></div>
                 <div class="phase1">
@@ -82,7 +82,7 @@
                     </p>
                     <p class="project-page methodology" > Check out the <a href="https://www.arcgis.com/apps/dashboards/2dab12ad68254e68b86c553a4e3fc4cb" target="_blank">Biomonitoring Dashboard </a> below! </p>
                     <iframe frameborder="0" src="https://www.arcgis.com/apps/dashboards/2dab12ad68254e68b86c553a4e3fc4cb"></iframe>
-
+                    
                     <!--WaterTemp Dashboard -->            
                     <div class="thin-divider"></div>
                     <h3> Water Temperature Dashboard</h3>
@@ -95,7 +95,7 @@
                     </p>
                     <p class="project-page methodology" > Check out the <a href="https://www.arcgis.com/apps/dashboards/9d65f1349c364e65bf39c47c09ff74be" target="_blank">Temperature Monitoring Dashboard </a>below! </p>
                     <iframe frameborder="0" src="https://www.arcgis.com/apps/dashboards/9d65f1349c364e65bf39c47c09ff74be"></iframe>
-                            
+                    
                     <!-- PWQMN Dashboard-->
                     <div class="thin-divider"></div>
                     <h3> Water Quality Dashboard</h3>   
@@ -108,10 +108,11 @@
                     <iframe frameborder="0" src="https://fleming.maps.arcgis.com/apps/dashboards/46ecd1854b9e424ba2d7585d3901957e"></iframe>
                 </div>
             </section>
-        </main>
-        <!-- Footer -->
-        <footer>
-            <p class="project-page">LYB Consulting - Project: 2309</p>
-        </footer>  
-    </body>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p class="project-page">LYB Consulting - Project: 2309</p>
+    </footer>  
+</body>
 </html>
