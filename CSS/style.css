@@ -599,6 +599,7 @@ p.project-page {
     height: auto;
     max-height: 525px;
     max-width: 350px;
+	border-radius: 50%
 }
 
 .overlay {
@@ -621,6 +622,19 @@ p.project-page {
 .text {
     color: white;
     font-size: 1.7vw;
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    /* needs same max size as the image */
+    max-height: 525px;
+    max-width: 350px;
+}
+
+.text-small {
+    color: white;
+    font-size: 20 px;
     position: absolute;
     width: 100%;
     margin: 0px;
