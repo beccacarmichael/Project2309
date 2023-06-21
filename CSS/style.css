@@ -234,27 +234,6 @@ h4 {
 
 /* HOME PAGE */
 
-/* home page Parallax  - adapted from https://www.w3schools.com/howto/howto_css_parallax.asp */ 
-/*.parallax {
-    background-image: url("../Images/HeroImages/splash.jpg");
-    min-height: 700px; 
-    /* Create the parallax scrolling effect */
-    /*background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */ 
-
-/*.parallax2 {
-    background-image: url("../Images/HeroImages/Aqua.jpg");
-    min-height: 500px; 
-    /* Create the parallax scrolling effect */
-    /*background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 /*.intro {
     text-align: center;
     margin: 40px;
@@ -272,20 +251,25 @@ h4 {
     text-align: left;
 }*/
 
-/**/
-.map-o {
+#homepage-main {
+    margin: 0px 20px;
+    background-color: #e3e4e4;
+}
+
+/* main page logo */
+#logo {
     height: 345px;
     float: left;
     margin-right: 50px;
     margin-left: 70px;
-    margin-bottom: 90px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 110px;
 }
 /* The intention of this @media section is that once the page becomes so narrow
 that the image and the header next to it can't fit side-by side,
 we change the image to just be simple a block element displayed above the text */
 @media screen and (max-width: 765px) {
-    .map-o {
+    #logo {
         margin: 25px auto 0px;
         float: none;
         display: block;
@@ -570,30 +554,48 @@ p.project-page {
 }
 
 .about-person {
-    flex: 1;
+    flex: 1;  /* need this so that the boxes for the people stretch to fill horizontal space */
+    text-align: center;
 }
 
-.image {
-    display: block;
+/* size settings for image and overlay */
+.about-size {
     width: 100%;
-    height: auto;
-    max-height: 525px;
     max-width: 350px;
-    border-radius: 50%
+    height: 100%;
+    max-height: 525px;
+}
+
+.about-image {
+    display: block;
+
+    border-radius: 50%;
+    margin: auto;
 }
 
 .overlay {
+    /* positioning */
     position: absolute;
     top: 0;
-    height: 100%;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    /* appearance */
+    background-color: #556471;
+    font-size: larger;
+    color: white;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+
+    /* hover animation */
     opacity: 0;
     transition: .5s ease;
-    background-color: #556471;
-    /* needs same max size as the image */
-    max-height: 525px;
-    max-width: 350px;
-    font-size: larger;
+}
+
+.img-with-overlay {
+    position: relative;  /* need this so the absolute positioning of the overlay will position itself off of this element */
 }
 
 .img-with-overlay:hover .overlay {
@@ -603,19 +605,6 @@ p.project-page {
 .text {
     color: white;
     font-size: 1.7vw;
-    position: absolute;
-    width: 100%;
-    margin: 0px;
-    padding: 20px 10px 20px 10px;
-    text-align: center;
-    /* needs same max size as the image */
-    max-height: 525px;
-    max-width: 350px;
-}
-
-.text-small {
-    color: white;
-    font-size: 20 px;
     position: absolute;
     width: 100%;
     margin: 0px;
