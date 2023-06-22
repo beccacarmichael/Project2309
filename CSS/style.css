@@ -524,7 +524,7 @@ p.project-page {
 }
 
 .name-text {
-    width: 50%;
+    width: auto;
     margin: auto;
     text-align: center;
 }
