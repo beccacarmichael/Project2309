@@ -136,7 +136,7 @@ a {
 
 /* Hero Image */
 .hero-image {
-    height: 50%;
+    height: 20%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,24 +144,19 @@ a {
     width: 100%;
     margin-top: 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Images/HeroImages/Aqua.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Add text to the Hero Image here */
-.hero-text {
+.project-title {
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px #384e60;
-    font-size: min(8vh, 9vw);
-    font-family: Tahoma, sans-serif;
+    color: #384e60;
+    font-size: 53px;
+    font-weight: bolder;
+    margin: 0px 20px;
 }
 
-@media all and (max-width: 800px) {
-    .hero-text {
-        padding-bottom: 20px;
-        padding-top: 20px;
+@media screen and (max-width: 900px) {
+    .project-title {
+        font-size: 40px;
     }
 }
 
